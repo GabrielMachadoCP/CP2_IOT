@@ -1,0 +1,31 @@
+#define LED_VERDE 2
+#define LED_VERMELHO 3
+
+String comando = "";
+
+void setup() {
+  Serial.begin(9600);
+  pinMode(LED_VERDE, OUTPUT);
+  pinMode(LED_VERMELHO, OUTPUT);
+  digitalWrite(LED_VERDE, HIGH);
+  digitalWrite(LED_VERMELHO, LOW);
+}
+
+void loop() {
+  while (Serial.available()) {
+    char c = Serial.read();
+    if (c == '\n') {
+      comando.trim();
+      if (comando == "queda") {
+        digitalWrite(LED_VERDE, LOW);
+        digitalWrite(LED_VERMELHO, HIGH);
+      } else if (comando == "ok") {
+        digitalWrite(LED_VERDE, HIGH);
+        digitalWrite(LED_VERMELHO, LOW);
+      }
+      comando = "";
+    } else {
+      comando += c;
+    }
+  }
+}
