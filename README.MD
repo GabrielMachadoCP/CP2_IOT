@@ -2,6 +2,13 @@
 
 <img src="image.png" alt="Esquema Circuito" width="500"/>
 
+## Integrantes do Grupo 
+
+- Felipe de Campos Mello Arnus - RM550923
+- Gabriel Machado Carrara Pimentel - RM99880
+- Leticia Cristina Gandarez Resina - RM98069
+- Vitor Hugo Gonçalves Rodrigues - RM97758
+
 ## 📌 Aplicabilidade
 
 Este projeto tem como objetivo detectar quedas de pessoas utilizando visão computacional (MediaPipe) e acionar um sinal no **Arduino Uno** via porta serial sempre que uma queda for identificada. É ideal para sistemas de segurança em residências de idosos ou clínicas, podendo ser integrado com alarmes, notificações ou dispositivos de emergência.
