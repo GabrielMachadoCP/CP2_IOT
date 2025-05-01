@@ -1,4 +1,4 @@
-# Sistema de Detecção de Quedas com Arduino e MediaPipe
+# Sistema de Detecção de Quedas com Arduino e MediaPipe - 2025
 
 <img src="image.png" alt="Esquema Circuito" width="500"/>
 
